@@ -1,0 +1,219 @@
+﻿
+body {
+	background: #888888 url('images/back.gif') repeat;
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	background-image: url('images/back.gif');
+}
+
+#container {
+	margin: 0px auto;
+	text-align: left;
+	width: 979px;
+	
+}
+#contentarea
+{ 
+	background-image:url(images/back.gif) ;
+	background-repeat:repeat-x;
+}
+#header {
+	background-image:url(images/header.jpg);
+	width:979px;
+	height:232px;
+	display:block;
+}
+
+.login_area {
+	background-image:url(images/loginbg.png);
+	background-repeat: no-repeat;
+	padding: 0px;
+	float: left;
+	height: 170px;
+	width: 286px;
+	margin-top: 30px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.login_head {
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+	float: left;
+	height: 33px;
+	width: 230px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 38px;
+	margin-top: 3px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+}
+.login_textarea {
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+	float: left;
+	width: 258px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+}.login_name {
+	font-family: Arial;
+	font-size: 11px;
+	font-weight: normal;
+	color: #a6a6a6;
+	text-decoration: none;
+	margin: 0px;
+	float: left;
+	padding-top: 3px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	text-align:center;
+	width: 55px;
+}
+
+
+.login_box {
+	font-family: Arial;
+	font-size: 11px;
+	font-weight: normal;
+	color: #a6a6a6;
+	text-decoration: none;
+	margin: 0px;
+	float: left;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.logintextbox {
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	height: 18px;
+	width: 180px;
+	border: 1px solid #666666;
+}.logintextbox:hover {
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	height: 18px;
+	width: 180px;
+	border: 1px solid #333333;
+}
+.register {
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	color: #fcb340;
+	text-decoration: none;
+	background-image:url(images/login_buttons_01.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 18px;
+	width: 115px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 13px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 67px;
+}
+.register:hover {
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-image:url(images/login_buttons_01.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 18px;
+	width: 115px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 13px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 67px;
+}
+.login {
+	font-family: Arial;
+	font-size: 10px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-image:url(images/login_buttons_02.png);
+	background-repeat: no-repeat;
+	float: right;
+	height: 18px;
+	width: 40px;
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 1px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 15px;
+}
+.login:hover {
+	font-family: Arial;
+	font-size: 10px;
+	font-weight: normal;
+	color: #fcb340;
+	text-decoration: none;
+	background-image:url(images/login_buttons_02.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 18px;
+	width: 40px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 1px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 15px;
+}
+
+
+.docregheading
+{
+	text-align:center;
+	font-size:larger;
+	margin-top:20px;
+	color:Red;
+
+}

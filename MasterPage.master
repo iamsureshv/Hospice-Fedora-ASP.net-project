@@ -1,0 +1,77 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Hospice Fedora</title>
+    <link href="mastercss.css" rel="stylesheet" type="text/css" />
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <link href="datecss.css" rel="stylesheet" type="text/css" />
+    <script src="datescript.js" type="text/javascript"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="height:200px; width:900px; margin:0 auto">
+        <img style="MARGIN: 0px auto; height: 200px;" src="images/cinical.gif" width="900px" alt="Logo" id="IMG1" onclick="return IMG1_onclick()" />
+        
+        <div id="menudiv">
+             <ul>
+             <% if(Session["userid"]==null || Session["userid"].ToString()=="")
+                { 
+             %>                
+                <li><a href="index.aspx">Home</a></li>
+                <li><a href="regselect.aspx">Registration</a></li>
+                <li><a href="bloodreg.aspx">Donate blood</a></li>
+             <%
+                }
+                else
+                {                    
+                    if(Session["usertype"].ToString()=="Doctor")
+                    {                                            
+             %>
+                <li><a href="dochome.aspx">Home</a></li>
+                <li><a href="doc_tpl.aspx">TPL</a></li>
+             <%
+                    }
+                    else if(Session["usertype"].ToString()=="Hospital") 
+                    {
+             %>
+                <li><a href="hosphome.aspx">Home</a></li>
+                <li><a href="hosp_tpl.aspx">TPL</a></li>
+                <li><a href="adddoctor.aspx">Add Doctor</a></li>
+                <li><a href="hosp_doclist.aspx">Doctors list</a></li>
+             <%
+                    }//inner if                    
+                } //outer if
+             %>   
+                <li><a href="facilities.aspx">Facilities</a></li>
+                <li><a href="aboutus.aspx">About Us</a></li>
+                
+            </ul>
+            <%
+                if(Session["userid"]!=null){
+                 %>
+                <span style="float:right; margin-top:5px; padding-right:10px">
+                <span style="color:White;font-weight:bold">Welcome</span>&nbsp;<span style="color:White; font-weight:bold"> <%=Session["userid"] %></span>
+                &nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="HyperLink10" runat="server" Font-Bold="False" Font-Underline="False" ForeColor="White" NavigateUrl="~/logout.aspx" Font-Size="13px">Logout</asp:HyperLink>
+            
+            </span>
+            <%} %>
+        </div>
+    
+    <div id="contentarea" >
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+    </div>
+    <div id="footer">
+        <div style="padding-top:10px">
+            <span class="copyright">Copyright &copy; Hospice Fedora Group<br />
+            <a href="admin/adminlogin.aspx"> Admin </a>| Privacy Policy</span>
+        </div>
+    </div>
+    </div>
+    </form>
+</body>
+</html>

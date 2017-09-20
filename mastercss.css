@@ -1,0 +1,52 @@
+﻿#menudiv
+{
+	height:25px;
+	width:900px;
+	background:url(images/menuback.gif);
+}
+#menudiv ul
+{
+	display:block;
+}
+#menudiv ul li
+{
+	display:block;
+	float:left;
+	list-style:none;
+	padding:5px 10px 5px 10px;
+	font-size:14px;
+	width: 126px;
+	height: 22px;
+}
+#contentarea
+{
+	width:900px;
+	margin:0 auto;
+}
+#footer
+{
+	height:50px;
+	width:900px;
+	margin:0 auto;
+	text-align:center;
+}
+.copyright
+{
+	color:Gray;
+	font-size:12px;
+	border-top:10px;
+}
+
+#menudiv ul li a
+{
+	color:#C04000;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+#menudiv ul li a:hover
+{
+	color:White;
+	font-weight:bold;
+	text-decoration:underline;
+}
